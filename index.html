@@ -372,22 +372,22 @@
         <script src="js/main.js"></script>
         
           <!-- Script for the visitor counter -->
-    <script>
-      // console.log("INCLUDE: this-is-fine-meme.png")
-      var dev_env = false
-      if (dev_env == false) {
-          fetch("https://uv4ha2g1lh.execute-api.ap-southeast-2.amazonaws.com/prod")
-              .then(function (response) {
-                  return response.json()
-              })
-              .then(function (myJson) {
-                  console.log("Visitor Count: " + myJson.visitorCount);
-                  document.querySelector("#visitorCount").innerHTML = "Total Visitors: " + myJson.visitorCount;
-              })
-              .catch(function (error) {
-                  console.log("Error: " + error)
-              })
-      }
-    </script>
+          <script>
+            //console.log("INCLUDE: this-is-fine-meme.png")
+            var dev_env = false
+            if (dev_env == false) {
+                fetch("https://uv4ha2g1lh.execute-api.ap-southeast-2.amazonaws.com/prod")
+                    .then(function (response) {
+                        return response.json()
+                    })
+                    .then(function (myJson) {
+                        console.log("Visitor Count: " + myJson.visitorCount);
+                        document.querySelector("#visitorCount").innerHTML = "Total visitors: " + myJson.visitorCount;
+                    })
+                    .catch(function (error) {
+                        console.log("Error: " + error)
+                    })
+            }
+        </script>
       </body>
 </html>
