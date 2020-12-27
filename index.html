@@ -121,9 +121,8 @@
               <div class="row d-flex justify-content-end mt-5">
                 <div class="col-md-10">
                   <div class="profile ftco-animate">
-                    <h2 class="mb-4">AWS Community Builder Program</h2>
+                    <h2 class="mb-4"><a target="_blank" href="https://aws.amazon.com/developer/community/community-builders/">AWS Community Builder Program</a></h2>
                     <p>I was recently invited to be part of AWS Community Builder program, where I will be joining virtual calls, participate in mentorship opportunities, continue to share or produce educational and technical content, actively engage with and help build the AWS community. The program will accept a limited number of members per year. </p>
-                    <p><a target="_blank" href="hhttps://aws.amazon.com/developer/community/community-builders/">More details about this program</a></p>
                     </div>
                 </div>
               </div>
@@ -230,7 +229,7 @@
                       <div class="col-md-10">
                       <div class="exp mt-5 ftco-animate">
                         <h1 class="mb-4"><a href=".">Education</a></h1>
-                      <div class="exp-wrap py-4">
+                        <div class="exp-wrap py-4">
                         <div class="desc">
                           <h4>Bachelor of Enginnering<span> - SJCIT, VTU</span> </h4>
                           <p class="location">Chickballapur - India</p>
@@ -246,7 +245,7 @@
                     <div class="col-md-10"> 
                       <div class="exp mt-5 ftco-animate">
                         <h1 class="mb-4"><a href=".">Skills</a></h1>
-                        <div class="subheading mb-3">AWS</div>
+                        <div class="subheading mb-3"><h4>AWS</h4>
                         <ul class="fa-ul">
                             <li>
                                 <span class="fa-li"><i class="fas fa-check"></i></span>
@@ -273,7 +272,7 @@
                                 Management & Governance: AWS Organizations, CloudWatch, CloudFormation, Cloud Trial, AWS Config, AWS Systems Manager.
                             </li>
                         </ul>
-                        <div class="subheading mb-3">Service Management Tools</div>
+                        <div class="subheading mb-3"><h4>Service Management Tools</h4></div>
                         <ul class="fa-ul">
                             <li>
                                 <span class="fa-li"><i class="fas fa-check"></i></span>
@@ -284,7 +283,7 @@
                                 BMC AR System Remedy Suite of Products
                             </li>
                         </ul>
-                        <div class="subheading mb-3">Programming Languages & Web</div>
+                        <div class="subheading mb-3"><h4>Programming Languages & Web</h4></div>
                         <ul class="fa-ul mb-0">
                             <li>
                                 <span class="fa-li"><i class="fas fa-check"></i></span>
@@ -395,10 +394,10 @@
             //console.log("INCLUDE: this-is-fine-meme.png")
             var dev_env = false
             if (dev_env == false) {
-                fetch("https://uv4ha2g1lh.execute-api.ap-southeast-2.amazonaws.com/prod")
+                fetch("https://qz400gkx77.execute-api.ap-southeast-2.amazonaws.com/Prod/visitorCount")
                     .then(function (response) {
                         return response.json()
-                    })
+                    })  
                     .then(function (myJson) {
                         console.log("Visitor Count: " + myJson.visitorCount);
                         document.querySelector("#visitorCount").innerHTML = "Total visitors: " + myJson.visitorCount;
